@@ -1,6 +1,7 @@
-import {createApp} from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 import router from "@/router";
+import { createPinia } from 'pinia'
 // main.js or main.ts
 // import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
 // import {library} from '@fortawesome/fontawesome-svg-core';
@@ -20,8 +21,10 @@ import TheFooter from "@/components/footer/TheFooter.vue";
 import './assets/tailwind.css'
 
 const app = createApp(App)
+const pinia = createPinia()
 
 app.use(router)
+app.use(pinia)
 
 app.component('the-navbar', TheNavbar)
 app.component('main-content', MainContent)
