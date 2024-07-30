@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial</title>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/a1f3f7040b.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: rgba(0, 0, 0, 0.75);
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .card {
+            margin: 0 5px;
+            width: 100px;
+            min-height: 300px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: width 300ms linear, detail 300ms linear;
+            cursor: pointer;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            width: 400px;
+            filter: drop-shadow(0px 1px 10px #ffffff);
+            margin: 0 30px;
+
+            .detail {
+                opacity: 1;
+                bottom: 0;
+            }
+        }
+
+        .school-pk {
+            background-image: url("./src/assets/scoolpk.jpg");
+        }
+
+        .tshirt-designer {
+            background-image: url("./src/assets/t-shirt.jpg");
+        }
+
+        .todo-list {
+            background-image: url("./src/assets/todo-list.jpg");
+        }
+
+        .monster-slayer {
+            background-image: url("./src/assets/monster-slayer.jpg");
+        }
+
+        .detail {
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            height: 100%;
+            color: white;
+            position: absolute;
+            bottom: -500px;
+            transition: opacity 400ms ease-in-out, bottom 200ms ease-in;
+        }
+
+        .fa-brands {
+            margin-right: 10px;
+        }
+
+        .list {
+            margin-bottom: 20px;
+        }
+
+        .read-more {
+            text-decoration: underline;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="cards">
+        <div class="card school-pk">
+            <div class="detail">
+                <div class="title">School Pk</div>
+                <div class="languages">
+                    <div class="list">
+                        <div class="list-item" style="font-size: 20px">
+                            <i class="fa-brands fa-html5" style="color: orange;"></i>
+                            HTML
+                        </div>
+                        <div class="list-item" style="font-size: 20px">
+                            <i class="fa-brands fa-html5" style="color: lightblue;"></i>
+                            CSS
+                        </div>
+                        <div class="list-item" style="font-size: 20px">
+                            <i class="fa-brands fa-html5" style="color: yellow;"></i>
+                            JAVASCRIPT
+                        </div>
+                    </div>
+                    <a class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card tshirt-designer">
+            <div class="detail">
+                TShirt Designer
+            </div>
+
+        </div>
+        <div class="card todo-list">
+            <div class="detail">
+                Todo List
+            </div>
+        </div>
+        <div class="card monster-slayer">
+            <div class="detail">
+                Monster Slayer
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

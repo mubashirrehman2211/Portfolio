@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,500&family=Roboto:wght@300&display=swap');
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+:root {
+    --main-bg-color: #141426;
+    --text-color: #d1d1d3;
+}
+
+.all-center {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-color {
+    color: var(--text-color);
+}
+
+.text-font-main {
+    font-family: 'Roboto', sans-serif;
+}
+
+.overlay {
+    position: relative;
+    cursor: pointer;
+}
+
+.overlay:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid #ddd;
+    transition: 0.3s linear;
+}
+
+.overlay:hover:before {
+    width: 90%;
+}
