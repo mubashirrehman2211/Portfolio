@@ -2,12 +2,12 @@
   <div class="my-10">
     <div class="image-circle">
       <div class="circle-content all-center flex-col">
-        <img alt="" src="../assets/mine.jpg"/>
+        <img alt="img" src="../assets/mine.jpg" />
         <a
-            href="https://www.linkedin.com/in/mubashir-rehman-62707b2a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            target="_blank"
-            class="border-2 rounded bg-gray-200 text-black font-bold px-3 py-1 my-3 hover:bg-blue-950 hover:text-gray-200 hover:border-blue-950"
-        >HIRE ME</a
+          href="https://www.linkedin.com/in/mubashir-rehman-62707b2a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"
+          class="border-2 rounded bg-gray-200 text-black font-bold px-3 py-1 my-3 hover:bg-blue-950 hover:text-gray-200 hover:border-blue-950"
+          >HIRE ME</a
         >
       </div>
     </div>
