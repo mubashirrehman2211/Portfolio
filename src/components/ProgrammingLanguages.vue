@@ -1,11 +1,10 @@
 <template>
-  <!--    CARDS CONTAINER-->
-
+  <!-- CARDS CONTAINER -->
   <div class="my-16 text-center">
     <h1 class="text-3xl text-gray-300">Things which I Know</h1>
 
     <div class="flex justify-around flex-wrap mt-2 mb-20 mx-12">
-      <!--        CARD 1-->
+      <!-- CARD 1 -->
 
       <a
         class="w-28 h-28 my-4 rounded-md all-center flex-col overlay"
@@ -20,7 +19,7 @@
         </div>
       </a>
 
-      <!--        CARD 2-->
+      <!-- CARD 2 -->
 
       <a
         class="w-28 h-28 my-4 rounded-md all-center flex-col overlay"
@@ -35,7 +34,7 @@
         </div>
       </a>
 
-      <!--        CARD 3-->
+      <!-- CARD 3 -->
 
       <a
         class="w-28 h-28 my-4 rounded-md all-center flex-col overlay"
@@ -50,7 +49,7 @@
         </div>
       </a>
 
-      <!--        CARD 4-->
+      <!-- CARD 4 -->
 
       <a
         class="w-28 h-28 my-4 rounded-md all-center flex-col overlay"
@@ -65,7 +64,7 @@
         </div>
       </a>
 
-      <!--        CARD 5-->
+      <!-- CARD 5 -->
 
       <a
         class="w-28 h-28 my-4 rounded-md all-center flex-col overlay"
