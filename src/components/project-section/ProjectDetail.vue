@@ -13,9 +13,9 @@ import ProjectCard from "./ProjectCard.vue";
         >
           <ProjectCard
             title="Schoolpk"
-            lang1="HTML"
-            lang2="CSS"
-            lang3="JS"
+            isHtml="HTML"
+            isCss="CSS"
+            isJs="JS"
             websiteLink="https://schoolpk.com/"
           />
         </div>
@@ -25,10 +25,10 @@ import ProjectCard from "./ProjectCard.vue";
         >
           <ProjectCard
             title="T-shirt Desinger"
-            lang1="HTML"
-            lang2="CSS"
-            lang3="JS"
-            websiteLink="https://t-shirt2.netlify.app"
+            isHtml="HTML"
+            isCss="CSS"
+            isJs="JS"
+            websiteLink="https://t-shirt-orpin.vercel.app"
           />
         </div>
 
@@ -39,10 +39,10 @@ import ProjectCard from "./ProjectCard.vue";
         >
           <ProjectCard
             title="Tic Tac Toe"
-            lang1="HTML"
-            lang2="CSS"
-            lang3="JS"
-            websiteLink="https://tictac4.netlify.app"
+            isHtml="HTML"
+            isCss="CSS"
+            isJs="JS"
+            websiteLink="https://tik-tac-iota.vercel.app"
           />
         </div>
 
@@ -53,11 +53,36 @@ import ProjectCard from "./ProjectCard.vue";
         >
           <ProjectCard
             title="Snake Mania"
-            lang1="HTML"
-            lang2="CSS"
-            lang3="JS"
-            lang4="Vue JS"
-            websiteLink="https://snake5.netlify.app"
+            isHtml="HTML"
+            isCss="Tailwind CSS"
+            isJs="JS"
+            isVue="Vue JS"
+            websiteLink="https://snake-mania-dun.vercel.app"
+          />
+        </div>
+        <div
+          class="card relative overflow-hidden rounded mx-[5px] my-5 w-[100px] min-h-[300px] bg-no-repeat bg-cover bg-center acer-storage"
+        >
+          <ProjectCard
+            title="Acer Storage"
+            isCss="Tailwind CSS"
+            isJs="JS"
+            isVue="Vue JS"
+            isNuxt="Nuxt JS"
+            websiteLink="https://acer-storage.vercel.app/"
+          />
+        </div>
+        <div
+          class="card relative overflow-hidden rounded mx-[5px] my-5 w-[100px] min-h-[300px] bg-no-repeat bg-cover bg-center cooking-book"
+        >
+          <ProjectCard
+            title="Cooking Book"
+            isCss="Tailwind CSS"
+            isJs="JS"
+            isVue="Vue JS"
+            isNuxt="Nuxt JS"
+            isNode="Node JS"
+            websiteLink="https://cooking-book-zeta.vercel.app"
           />
         </div>
       </div>
@@ -102,6 +127,13 @@ import ProjectCard from "./ProjectCard.vue";
 
 .snake {
   background-image: url("../../assets/snake5.png");
+}
+
+.acer-storage {
+  background-image: url("../../assets/acer-storage.png");
+}
+.cooking-book {
+  background-image: url("../../assets/cooking-book.png");
 }
 
 @media screen and (max-width: 650px) {

@@ -2,11 +2,13 @@
 import { defineProps } from "vue";
 defineProps([
   "title",
-  "lang1",
-  "lang2",
-  "lang3",
-  "lang4",
-  "lang5",
+  "isHtml",
+  "isCss",
+  "isTailwind",
+  "isJs",
+  "isVue",
+  "isNuxt",
+  "isNode",
   "imageSrc",
   "websiteLink",
 ]);
@@ -21,24 +23,37 @@ defineProps([
       <div class="text-2xl text-gray-50 mt-2">{{ title }}</div>
       <!-- HTML -->
       <div class="flex flex-col justify-start my-3">
-        <div class="flex justify-start my-0.5" v-if="lang1">
+        <div class="flex justify-start my-0.5" v-if="isHtml">
           <i class="fa-brands fa-html5 text-2xl text-green-500"></i>
-          <h2 class="mx-3 text-xl text-gray-500">{{ lang1 }}</h2>
+          <h2 class="mx-3 text-xl text-gray-500">{{ isHtml }}</h2>
         </div>
         <!-- CSS -->
-        <div class="flex justify-start my-0.5" v-if="lang2">
+        <div class="flex justify-start my-0.5" v-if="isCss">
           <i class="fa-brands fa-css3-alt text-2xl text-blue-500"></i>
-          <h2 class="mx-3 text-xl text-gray-500">{{ lang2 }}</h2>
+          <h2 class="mx-3 text-xl text-gray-500">{{ isCss }}</h2>
+        </div>
+        <div class="flex justify-start my-0.5" v-if="isTailwind">
+          <i class="fa-brands fa-vuejs text-2xl text-green-600"></i>
+          <h2 class="mx-3 text-xl text-gray-500">{{ isTailwind }}</h2>
         </div>
         <!-- JS -->
-        <div class="flex justify-start my-0.5" v-if="lang3">
+        <div class="flex justify-start my-0.5" v-if="isJs">
           <i class="fa-brands fa-js text-2xl text-yellow-500"></i>
-          <h2 class="mx-3 text-xl text-gray-500">{{ lang3 }}</h2>
+          <h2 class="mx-3 text-xl text-gray-500">{{ isJs }}</h2>
         </div>
         <!-- Vue Js -->
-        <div class="flex justify-start my-0.5" v-if="lang4">
+        <div class="flex justify-start my-0.5" v-if="isVue">
           <i class="fa-brands fa-vuejs text-2xl text-green-600"></i>
-          <h2 class="mx-3 text-xl text-gray-500">{{ lang4 }}</h2>
+          <h2 class="mx-3 text-xl text-gray-500">{{ isVue }}</h2>
+        </div>
+        <div class="flex justify-start my-0.5" v-if="isNuxt">
+          <i class="fa-brands fa-vuejs text-2xl text-green-600"></i>
+          <h2 class="mx-3 text-xl text-gray-500">{{ isNuxt }}</h2>
+        </div>
+
+        <div class="flex justify-start my-0.5" v-if="isNode">
+          <i class="fa-brands fa-node-js text-2xl text-[#44883e]"></i>
+          <h2 class="mx-3 text-xl text-gray-500">{{ isNode }}</h2>
         </div>
       </div>
       <!-- Website Link -->
