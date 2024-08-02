@@ -16,7 +16,7 @@
       <a
         href="https://www.linkedin.com/in/mubashir-rehman-62707b2a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         target="_blank"
-        class="border-2 rounded bg-gray-200 text-gray-900 font-semibold px-3 py-1 my-3 hover:bg-[#3bc195] hover:text-gray-100 hover:border-[#3bc195] duration-500"
+        class="border-2 rounded bg-gray-200 text-gray-900 font-semibold px-3 py-1 my-3 hover:bg-[#3bc195] hover:text-gray-200 hover:border-[#3bc195] duration-500"
         >HIRE ME</a
       >
     </div>
