@@ -2,11 +2,11 @@
   <div class="my-10">
     <div class="image-circle">
       <div class="circle-content all-center flex-col">
-        <img alt="img" src="../assets/mine.jpg" />
+        <img alt="img" class="brightness-100" src="/profile/mine.jpg" />
         <a
           href="https://www.linkedin.com/in/mubashir-rehman-62707b2a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           target="_blank"
-          class="border-2 rounded bg-gray-200 text-black font-bold px-3 py-1 my-3 hover:bg-blue-950 hover:text-gray-200 hover:border-blue-950"
+          class="border-2 rounded bg-gray-200 text-black font-semibold px-5 py-1 my-3 hover:bg-[#39b68c] hover:text-gray-100 hover:border-[#39b68c] duration-300"
           >HIRE ME</a
         >
       </div>
@@ -29,7 +29,7 @@
   content: "";
   position: absolute;
   inset: -10px 110px;
-  background: linear-gradient(315deg, #00ccff, #d400d4);
+  background: linear-gradient(315deg, #3bc195, #2cc058);
   transition: 0.5s;
   animation: animate 4s linear infinite;
 }

@@ -1,27 +1,22 @@
-<script setup>
-const scrollContact = () => {
-  document.documentElement.style.scrollBehavior = "smooth";
-  document.getElementById("contact").scrollIntoView();
-};
-</script>
+<script setup></script>
 
 <template>
   <div id="about" class="all-center">
     <div class="justify-between text-center flex flex-col text-font-main">
-      <h1 class="text-3xl edit-1">Hello,</h1>
+      <h1 class="text-2xl">Hi Everyone,</h1>
       <h1 class="text-3xl mt-3 edit-2">
         <strong class="text-3xl text-gray-300"
           >My Name is Mubashir Rehman</strong
         >
       </h1>
 
-      <p class="text-2xl mt-3 edit-3 font-bold">I'm a Software Developer</p>
-      <button
-        class="border-2 rounded bg-white text-black font-bold m-auto mt-5 px-2 py-1 w-1/3 hover:bg-blue-950 hover:text-gray-200 hover:border-blue-950"
-        @click="scrollContact"
+      <p class="text-2xl mt-3 edit-3 font-bold">I am a Software Developer</p>
+      <a
+        href="https://www.linkedin.com/in/mubashir-rehman-62707b2a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        target="_blank"
+        class="border-2 rounded bg-gray-200 text-black font-bold px-3 py-1 my-3 hover:bg-blue-950 hover:text-gray-200 hover:border-blue-950"
+        >HIRE ME</a
       >
-        Contact
-      </button>
     </div>
   </div>
 </template>

@@ -7,11 +7,11 @@ const store = useCounterStore();
   <form>
     <div id="contact" class="all-center m-auto">
       <div
-        class="border-2 w-2/4 px-10 py-5 rounded-md flex flex-col border-gray-800 box-1"
+        class="border-2 px-10 w-[50%] py-5 rounded flex flex-col border-gray-500 box-1"
       >
-        <div>
+        <div class="my-2">
           <h2 class="text-2xl font-bold text-gray-400 text-font-main">
-            Contact Me
+            Send Mail
           </h2>
         </div>
 
@@ -20,17 +20,10 @@ const store = useCounterStore();
           <div class="w-full">
             <input
               v-model="store.email"
-              class="w-full py-3 px-2 bg-[#141426] rounded border-gray-800 border-2 text-md"
+              class="w-full py-3 px-2 bg-[#141426] rounded border-gray-600 border-2 text-md"
               placeholder="Email"
               type="email"
             />
-
-            <p
-              v-if="store.emailError"
-              class="text-start ml-2 text-red-500 text-sm my-2"
-            >
-              Email field is required
-            </p>
           </div>
         </div>
 
@@ -39,17 +32,10 @@ const store = useCounterStore();
         <div class="my-2">
           <input
             v-model="store.subject"
-            class="w-full py-3 px-2 bg-[#141426] rounded border-gray-800 border-2 text-md"
+            class="w-full py-3 px-2 bg-[#141426] rounded border-gray-600 border-2 text-md"
             placeholder="Subject"
             type="text"
           />
-
-          <p
-            v-if="store.subjectError"
-            class="text-start ml-2 text-red-500 text-sm my-2"
-          >
-            Subject field is required
-          </p>
         </div>
 
         <!-- MESSAGE TEXTAREA -->
@@ -57,20 +43,13 @@ const store = useCounterStore();
         <div class="w-full my-2">
           <textarea
             v-model="store.message"
-            class="w-full border-2 p-3 bg-[#141426] border-gray-800 rounded"
+            class="w-full border-2 p-3 bg-[#141426] border-gray-600 rounded"
             cols="115"
             name="message"
             placeholder="Message"
             rows="4"
           ></textarea>
-          <p
-            v-if="store.messageError"
-            class="text-start ml-2 text-red-500 text-sm my-2"
-          >
-            Message field is required
-          </p>
         </div>
-
         <!-- SENT BUTTON -->
 
         <div class="my-2">
@@ -100,9 +79,13 @@ const store = useCounterStore();
 </template>
 
 <style scoped>
-@media screen and (max-width: 860px) {
+.text-danger {
+  outline-color: red;
+}
+
+@media screen and (max-width: 1070px) {
   .box-1 {
-    width: 75%;
+    width: 80%;
   }
 }
 

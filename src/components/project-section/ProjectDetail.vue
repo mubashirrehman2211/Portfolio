@@ -2,14 +2,14 @@
 import ProjectCard from "./ProjectCard.vue";
 </script>
 <template>
-  <div class="text-center justify-center">
+  <div class="text-center justify-center my-20">
     <h2 id="project" class="text-3xl">Projects I've Done</h2>
     <h2 class="text-3xl">Few of Them</h2>
     <div class="card-container">
-      <div class="cards all-center mt-2 mb-20">
+      <div class="cards all-center flex-wrap gap-3 gap-y-5 mt-2 mb-20">
         <!-- card 1 -->
         <div
-          class="card relative overflow-hidden rounded mx-[5px] my-5 w-[100px] min-h-[300px] bg-no-repeat bg-cover bg-center school-pk"
+          class="card relative overflow-hidden rounded mx-[5px] w-[130px] h-[320px] bg-no-repeat bg-cover bg-center school-pk"
         >
           <ProjectCard
             title="Schoolpk"
@@ -21,7 +21,7 @@ import ProjectCard from "./ProjectCard.vue";
         </div>
         <!-- card 2 -->
         <div
-          class="card relative overflow-hidden rounded mx-[5px] my-5 w-[100px] min-h-[300px] bg-no-repeat bg-cover bg-center tshirt-designer"
+          class="card relative overflow-hidden rounded mx-[5px] w-[130px] h-[320px] bg-no-repeat bg-cover bg-center tshirt-designer"
         >
           <ProjectCard
             title="T-shirt Desinger"
@@ -35,7 +35,7 @@ import ProjectCard from "./ProjectCard.vue";
         <!-- card 3 -->
 
         <div
-          class="card relative overflow-hidden rounded mx-[5px] my-5 w-[100px] min-h-[300px] bg-no-repeat bg-cover bg-center tic-tac"
+          class="card relative overflow-hidden rounded mx-[5px] w-[130px] h-[320px] bg-no-repeat bg-cover bg-center tic-tac"
         >
           <ProjectCard
             title="Tic Tac Toe"
@@ -49,7 +49,7 @@ import ProjectCard from "./ProjectCard.vue";
         <!-- card 4 -->
 
         <div
-          class="card relative overflow-hidden rounded mx-[5px] my-5 w-[100px] min-h-[300px] bg-no-repeat bg-cover bg-center snake"
+          class="card relative overflow-hidden rounded mx-[5px] w-[130px] h-[320px] bg-no-repeat bg-cover bg-center snake"
         >
           <ProjectCard
             title="Snake Mania"
@@ -61,7 +61,7 @@ import ProjectCard from "./ProjectCard.vue";
           />
         </div>
         <div
-          class="card relative overflow-hidden rounded mx-[5px] my-5 w-[100px] min-h-[300px] bg-no-repeat bg-cover bg-center acer-storage"
+          class="card relative overflow-hidden rounded mx-[5px] w-[130px] h-[320px] bg-no-repeat bg-cover bg-center acer-storage"
         >
           <ProjectCard
             title="Acer Storage"
@@ -73,7 +73,7 @@ import ProjectCard from "./ProjectCard.vue";
           />
         </div>
         <div
-          class="card relative overflow-hidden rounded mx-[5px] my-5 w-[100px] min-h-[300px] bg-no-repeat bg-cover bg-center cooking-book"
+          class="card relative overflow-hidden rounded mx-[5px] w-[130px] h-[320px] bg-no-repeat bg-cover bg-center cooking-book"
         >
           <ProjectCard
             title="Cooking Book"
@@ -114,26 +114,32 @@ import ProjectCard from "./ProjectCard.vue";
 }
 
 .school-pk {
-  background-image: url("../../assets/schoolpk.png");
+  background-image: url("/public/projects/schoolpk.png");
 }
 
 .tshirt-designer {
-  background-image: url("../../assets/t-shirt.jpg");
+  background-image: url("/public/projects/t-shirt.jpg");
 }
 
 .tic-tac {
-  background-image: url("../../assets/tictac.png");
+  background-image: url("/public/projects/tictac.png");
 }
 
 .snake {
-  background-image: url("../../assets/snake5.png");
+  background-image: url("/public/projects/snake5.png");
 }
 
 .acer-storage {
-  background-image: url("../../assets/acer-storage.png");
+  background-image: url("/public/projects/acer-storage.png");
 }
 .cooking-book {
-  background-image: url("../../assets/cooking-book.png");
+  background-image: url("/public/projects/cooking-book.png");
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    min-height: 200px;
+  }
 }
 
 @media screen and (max-width: 650px) {

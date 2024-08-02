@@ -7,10 +7,7 @@ export const useCounterStore = defineStore('counter', {
             subject: null,
             sentmessage: false,
             // Errors
-            emailError: null,
-            subjectError: null,
-            messageError: null,
-
+            contactError: false,
       }),
       getters: {},
       actions: {
@@ -18,25 +15,21 @@ export const useCounterStore = defineStore('counter', {
                   this.sentmessage = true;
                   e.preventDefault();
                   if (this.email && this.subject && this.message) {
+                        this.contactError = false
                         Swal.fire({
                               position: "top-center",
                               icon: "success",
                               title: "Your mail has been sent successfully",
                               showConfirmButton: true,
                         });
-                        this.emailError = false
-                        this.subjectError = false
-                        this.messageError = false
                   } else {
+                        // if (!this.subject || !this.email || !this.message) return this.contactError = true
                         Swal.fire({
                               title: "Error!",
                               text: "Something went wrong",
                               icon: "error",
                               confirmButtonText: "Ok",
                         });
-                        if (!this.email) return this.emailError = true;
-                        if (!this.subject) return this.subjectError = true;
-                        if (!this.message) return this.messageError = true;
                   }
 
             },

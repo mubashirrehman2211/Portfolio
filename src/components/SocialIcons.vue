@@ -3,20 +3,27 @@
     <ul class="all-center">
       <!--      FAEBOOK    -->
       <li class="mx-1.5">
-        <a class="all-center before hover:before:top-0"
-           href="https://www.facebook.com/profile.php?id=61554239834770&mibextid=2JQ9oc"
-           target="_blank">
-          <i class="fa-brands fa-facebook relative text-black text-xl rotation duration-500 z-[3]"></i>
+        <a
+          class="all-center before hover:before:top-0"
+          href="https://www.facebook.com/profile.php?id=61554239834770&mibextid=2JQ9oc"
+          target="_blank"
+        >
+          <i
+            class="fa-brands fa-facebook relative text-black text-xl rotation duration-500 z-[3]"
+          ></i>
         </a>
       </li>
 
       <!--      LINKEDIN   -->
 
       <li class="mx-1.5">
-        <a class="all-center before hover:before:top-0"
-           href="https://www.linkedin.com/in/mubashir-rehman-62707b2a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-           target="_blank">
-          <i class="fa-brands fa-linkedin relative text-black text-xl rotation duration-500 z-[3]"
+        <a
+          class="all-center before hover:before:top-0"
+          href="https://www.linkedin.com/in/mubashir-rehman-62707b2a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"
+        >
+          <i
+            class="fa-brands fa-linkedin relative text-black text-xl rotation duration-500 z-[3]"
           ></i>
         </a>
       </li>
@@ -24,8 +31,13 @@
       <!--      TWITTER-X   -->
 
       <li class="mx-1.5">
-        <a class="all-center before hover:before:top-0" href="https://x.com/618Mubashir?s=09" target="_blank">
-          <i class="fa-brands fa-x-twitter relative text-black text-xl rotation duration-500 z-[3]"
+        <a
+          class="all-center before hover:before:top-0"
+          href="https://x.com/618Mubashir?s=09"
+          target="_blank"
+        >
+          <i
+            class="fa-brands fa-x-twitter relative text-black text-xl rotation duration-500 z-[3]"
           ></i>
         </a>
       </li>
@@ -33,15 +45,18 @@
       <!--      GITHUB   -->
 
       <li class="mx-1.5">
-        <a class="all-center before hover:before:top-0" href="https://github.com/mubashirehman1122" target="_blank">
+        <a
+          class="all-center before hover:before:top-0"
+          href="https://github.com/mubashirrehman2211"
+          target="_blank"
+        >
           <i
-              class="fa-brands fa-github relative text-black text-xl rotation duration-500 z-[3]"
+            class="fa-brands fa-github relative text-black text-xl rotation duration-500 z-[3]"
           ></i>
         </a>
       </li>
     </ul>
   </div>
-
 </template>
 
 <style scoped>
@@ -72,7 +87,7 @@
   width: 100%;
   height: 100%;
   background: #1662b9;
-  transition: .5s;
+  transition: 0.5s;
   z-index: 2;
 }
 
@@ -91,5 +106,4 @@ li:nth-child(3) a:before {
 ul li:nth-child(4) a:before {
   background: #6e5494;
 }
-
 </style>
