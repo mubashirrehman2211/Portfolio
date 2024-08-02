@@ -28,8 +28,8 @@
 .image-circle::before {
   content: "";
   position: absolute;
-  inset: -10px 110px;
-  background: linear-gradient(315deg, #3bc195, #2cc058);
+  inset: -20px 100px;
+  background: linear-gradient(315deg, #3bc195, #187c36);
   transition: 0.5s;
   animation: animate 4s linear infinite;
 }
