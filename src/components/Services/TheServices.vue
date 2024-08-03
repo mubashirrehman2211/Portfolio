@@ -7,7 +7,7 @@ const store = useCounterStore();
   <form>
     <div id="contact" class="all-center m-auto">
       <div
-        class="border-2 px-10 w-[50%] py-5 rounded flex flex-col border-gray-500 box-1"
+        class="border-2 px-10 w-[47%] py-5 rounded flex flex-col border-gray-500 box-1"
       >
         <div class="my-2">
           <h2 class="text-2xl font-bold text-gray-400 text-font-main">
