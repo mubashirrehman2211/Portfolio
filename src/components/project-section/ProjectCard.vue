@@ -18,7 +18,7 @@ defineProps([
   <div
     class="detail opacity-0 all-center flex-col bg-[rgba(0,0,0,0.7)] w-full h-full text-white absolute bottom-[-500px]"
   >
-    <div class="text-start p-7">
+    <div class="text-start p-2">
       <!-- Card Title -->
       <div class="text-2xl text-gray-50 mt-2">{{ title }}</div>
       <!-- HTML -->
@@ -58,7 +58,7 @@ defineProps([
       </div>
       <!-- Website Link -->
       <a
-        class="border-2 rounded bg-gray-100 text-black font-semibold m-auto mt-5 px-4 py-2 hover:bg-blue-950 hover:text-gray-200 hover:border-blue-950"
+        class="border-2 rounded bg-gray-100 text-black font-semibold m-auto mt-7 px-4 py-1.5 hover:bg-blue-950 hover:text-gray-200 hover:border-blue-950"
         :href="websiteLink"
         target="_blank"
         >Read More</a
