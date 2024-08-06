@@ -4,32 +4,27 @@ import { useCounterStore } from "../../stores/data";
 const store = useCounterStore();
 </script>
 <template>
-  <form>
-    <div id="contact" class="all-center m-auto">
-      <div
-        class="border-2 px-10 w-[47%] py-5 rounded flex flex-col border-gray-500 box-1"
-      >
-        <div class="my-2">
+  <form class="border-2 rounded border-gray-500 m-auto xl:w-[50%]">
+    <div id="contact" class="md:flex text-center justify-center m-auto p-3">
+      <div class="w-full all-center m-auto flex-col box-1">
+        <div class="w-full my-2">
           <h2 class="text-2xl font-bold text-gray-400 text-font-main">
             Send Mail
           </h2>
         </div>
-
-        <div class="my-2 flex-col all-center">
-          <!--    EMAIL INPUT-->
-          <div class="w-full">
-            <input
-              v-model="store.email"
-              class="w-full py-3 px-2 bg-[#141426] rounded border-gray-600 border-2 text-md"
-              placeholder="Email"
-              type="email"
-            />
-          </div>
+        <!--    EMAIL INPUT-->
+        <div class="w-full">
+          <input
+            v-model="store.email"
+            class="w-full py-3 px-2 bg-[#141426] rounded border-gray-600 border-2 text-md"
+            placeholder="Email"
+            type="email"
+          />
         </div>
 
         <!-- SUBJECT INPUT -->
 
-        <div class="my-2">
+        <div class="w-full my-2">
           <input
             v-model="store.subject"
             class="w-full py-3 px-2 bg-[#141426] rounded border-gray-600 border-2 text-md"
@@ -61,17 +56,28 @@ const store = useCounterStore();
             Send Mail
           </button>
         </div>
-        <div v-if="store.sentmessage" class="mb-2 duration-300">
-          <p class="font-semibold text-gray-400">
-            You can also connect with me on Whatsapp +92300-7018264
+      </div>
+      <div
+        class="whatsapp flex flex-col text-center justify-center gap-2 contact-box py-3"
+      >
+        <div class="all-center flex-col duration-300 w-full">
+          <i class="fa-brands fa-whatsapp text-gray-500 text-xl"></i>
+          <p class="font-semibold text-gray-500 text-md">+92300-7018264</p>
+        </div>
+        <div
+          class="opacity-0 md:opacity-100 border-[1px] border-gray-500 w-full md:h-full m-auto all-center md:w-[2px]"
+        ></div>
+        <div class="text-gray-500 font-semibold opacity-0 md:opacity-100">
+          Connect
+        </div>
+        <div
+          class="border-[1px] border-gray-500 w-full md:h-full m-auto all-center md:w-[2px] opacity-0 md:opacity-100"
+        ></div>
+        <div class="all-center flex-col duration-300 w-full">
+          <i class="fa-regular fa-envelope text-gray-500 text-xl"></i>
+          <p class="font-semibold text-gray-500 text-md">
+            malikextra7@gmail.com
           </p>
-          <a
-            class="font-semibold text-gray-200 underline hover:text-gray-400"
-            href="https://web.whatsapp.com/"
-            target="_blank
-"
-            >Go to Whatsapp</a
-          >
         </div>
       </div>
     </div>
